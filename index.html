@@ -1,53 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ashmi's Website</title>
+    <title>Ashmi Portfolio</title>
 
     <style>
         body {
-            background: linear-gradient(to right, #6a11cb, #2575fc);
-            text-align: center;
+            margin: 0;
             font-family: Arial;
+            background-color: #111;
             color: white;
-            padding-top: 100px;
+            text-align: center;
         }
 
-        input {
-            padding: 8px;
-            border-radius: 5px;
-            border: none;
-                    }
+        header {
+            background: #6a11cb;
+            padding: 20px;
+            font-size: 24px;
+             }
+
+        section {
+            padding: 40px 20px;
+        }
+
+        h2 {
+            color: #6a11cb;
+        }
+
+        .card {
+            background: #222;
+            margin: 15px auto;
+            padding: 20px;
+            width: 80%;
+            border-radius: 10px;
+              }
 
         button {
-            padding: 8px 15px;
-            border-radius: 5px;
+            padding: 10px 20px;
+            background: #6a11cb;
             border: none;
-            background-color: black;
             color: white;
+            border-radius: 5px;
             cursor: pointer;
         }
 
-        h1 {
-            margin-bottom: 30px;
+        button:hover {
+            background: #2575fc;
         }
     </style>
 </head>
+    <body>
 
-<body>
-    <h1>Welcome to My Website 🌐</h1>
+<header>
+    Ashmi | Web Developer 🚀
+</header>
 
-    <input type="text" id="nameInput" placeholder="Enter your name">
-    <button onclick="showMessage()">Submit</button>
+<section>
+    <h2>About Me</h2>
+    <p>I am learning web development and building real projects.</p>
+</section>
 
-    <h2 id="message"></h2>
+<section>
+    <h2>My Skills</h2>
+    <div class="card">HTML</div>
+    <div class="card">CSS</div>
+    <div class="card">JavaScript</div>
+    <div class="card">Python</div>
+</section>
+        <section>
+    <h2>My Projects</h2>
+    <div class="card">Simple Calculator</div>
+    <div class="card">Dynamic Welcome Website</div>
+</section>
 
-    <script>
-        function showMessage() {
-            var name = document.getElementById("nameInput").value;
-            document.getElementById("message").innerHTML =
-                "Welcome, " + name + " 💖";
-        }
-    </script>
+<section>
+    <h2>Contact</h2>
+    <button onclick="alert('Email: ashmi@example.com')">
+        Contact Me
+    </button>
+</section>
 
 </body>
 </html>
+
+        }
