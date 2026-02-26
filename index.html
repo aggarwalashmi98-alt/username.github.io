@@ -1,62 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Ashmi Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
         body {
             margin: 0;
-            font-family: Arial;
-            background-color: #111;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
             color: white;
             text-align: center;
+            overflow-x: hidden;
         }
 
         header {
-            background: #6a11cb;
-            padding: 20px;
-            font-size: 24px;
-             }
+            padding: 40px 20px;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            animation: fadeIn 1s ease-in;
+        }
 
         section {
-            padding: 40px 20px;
+            padding: 50px 20px;
+            animation: slideUp 1s ease-in;
         }
 
         h2 {
-            color: #6a11cb;
-        }
-
-        .card {
-            background: #222;
-            margin: 15px auto;
-            padding: 20px;
-            width: 80%;
-            border-radius: 10px;
+            color: #ffdd59;
+            margin-bottom: 20px;
               }
 
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            margin: 15px auto;
+            padding: 25px;
+            width: 80%;
+            border-radius: 15px;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.2);
+        }
         button {
-            padding: 10px 20px;
-            background: #6a11cb;
+            padding: 12px 25px;
+            background: #ffdd59;
             border: none;
-            color: white;
-            border-radius: 5px;
+            color: #111;
+            font-weight: bold;
+            border-radius: 8px;
             cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
         }
 
         button:hover {
-            background: #2575fc;
+            background: #ffc107;
+            transform: scale(1.05);
+        }
+
+        img {
+            border-radius: 50%;
+            margin: 15px 0;
+        }
+        /* Animations */
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes slideUp {
+            from {opacity: 0; transform: translateY(50px);}
+            to {opacity: 1; transform: translateY(0);}
         }
     </style>
 </head>
-    <body>
+
+<body>
 
 <header>
     Ashmi | Web Developer 🚀
 </header>
-
-<section>
+    <section>
     <h2>About Me</h2>
-    <p>I am learning web development and building real projects.</p>
+    <p>I am learning web development and building real projects with HTML, CSS, and JavaScript.</p>
 </section>
 
 <section>
@@ -66,7 +98,15 @@
     <div class="card">JavaScript</div>
     <div class="card">Python</div>
 </section>
-        <section>
+
+<section>
+    <h2>My Projects</h2>
+    <div class="card">Simple Calculator</div>
+    <div class="card">Dynamic Welcome Website</div>
+</section>
+
+<section>
+    <section>
     <h2>My Projects</h2>
     <div class="card">Simple Calculator</div>
     <div class="card">Dynamic Welcome Website</div>
@@ -74,24 +114,17 @@
 
 <section>
     <h2>Contact Me</h2>
-    <!-- Your Photo -->
-    <img src="https://ibb.co/zW4mmTWR" alt="Ashmi Photo" width="150" style="border-radius:50%; margin: 15px 0;">
-    
-    <!-- Social Buttons -->
+    <img src="https://ibb.co/zW4mmTWR" alt="Ashmi Photo" width="150">
     <div>
-        <!-- LinkedIn Button -->
-        <a href="#" target="_blank">
-            <button>LinkedIn</button>
-        </a>
+        <!-- LinkedIn Button (Placeholder) -->
+        <a href="#" target="_blank"><button>LinkedIn</button></a>
         
-        <!-- GitHub Button -->
-        <a href="#" target="_blank">
-            <button>GitHub</button>
-        </a>
+        <!-- GitHub Button (Placeholder) -->
+        <a href="#" target="_blank"><button>GitHub</button></a>
     </div>
 </section>
 
 </body>
 </html>
-
+    
         }
