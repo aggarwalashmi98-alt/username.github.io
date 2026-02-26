@@ -19,11 +19,27 @@
 }
 
 nav a {
-    color: white;
+  position: relative;
+  color: white;
   margin: 15px;
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #ffdd59;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
 }
 
 nav a:hover {
