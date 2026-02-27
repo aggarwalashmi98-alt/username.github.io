@@ -169,7 +169,7 @@ body {
 </nav>
     
 <header>
-    Ashmi | Web Developer 🚀
+    <h1 id="typing"></h1>
 </header>
 <section id="home">
     <h2>About Me</h2>
@@ -202,5 +202,21 @@ function toggleMode() {
   document.body.classList.toggle("light-mode");
 }
 </script>
+<script>
+const text = "Hi, I'm Ashmi 👋 | Web Developer";
+let index = 0;
+
+function typeEffect() {
+  if (index < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeEffect, 100);
+  }
+}
+
+typeEffect();
+</script>
 </body>
+</html>
+    
 </html>
